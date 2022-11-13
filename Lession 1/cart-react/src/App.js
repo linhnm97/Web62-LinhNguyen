@@ -9,7 +9,7 @@ const initialProduct = [
     id: 1,
     name: "Samsung Galaxy A10",
     price: "40906000",
-    img: "assets/img/samsung-galaxy.jpg",
+    img: "./img/samsung-galaxy.jpg",
     info: {
       screen: "AMOLED Full HD 9.0",
       os: "Android 9.0",
@@ -23,7 +23,7 @@ const initialProduct = [
     id: 2,
     name: "IPhone12",
     price: "200306000",
-    img: "assets/img/iphone-12.jpg",
+    img: "./img/iphone-12.jpg",
     info: {
       screen: "Full HD 12.0",
       os: "IOS 14",
@@ -37,7 +37,7 @@ const initialProduct = [
     id: 3,
     name: "Xiaomi Note 10",
     price: "10005000",
-    img: "assets/img/xiaomi-redmi-note-10-5g.jpg",
+    img: "./img/xiaomi-redmi-note-10-5g.jpg",
     info: {
       screen: "OLED 10.0",
       os: "Android 8.0",
@@ -63,7 +63,7 @@ function App() {
     <div className="App">
       <Header />
       <Cart cart= {cart}/>
-      <ProductList products= {products} />
+      <ProductList products= {products} setCart = {setCart}/>
       <ProductDetail />
     </div>
   );
