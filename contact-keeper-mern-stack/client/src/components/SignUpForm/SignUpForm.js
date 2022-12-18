@@ -4,7 +4,7 @@ import {useForm} from "react-hook-form";
 import "./SignUpForm.css"
 
 function SignUpForm(props) {
-  const { onSubmit} = props;
+  const {onSubmit} = props;
   const {
     register,
     handleSubmit,
